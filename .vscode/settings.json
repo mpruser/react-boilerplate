@@ -1,0 +1,66 @@
+{
+  "explorer.sortOrder": "type",
+  "editor.fontFamily": "D2Coding",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": true
+  },
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "stylelint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "stylelint.validate": [
+    "css", 
+    "scss",
+    "typescript",
+    "typescriptreact"
+  ],
+  "cSpell.words": [
+    "antd",
+    "autodocs",
+    "commitlint",
+    "corejs",
+    "docgen",
+    "HSFO",
+    "immer",
+    "LSMGO",
+    "mpruser",
+    "PRIZM",
+    "Seanergy",
+    "seanergyp",
+    "spoqa",
+    "svgr",
+    "syncup",
+    "tanstack",
+    "unaddable",
+    "VLSFO",
+    "xsmall",
+    "zustand"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  // css, scss module 관련하여 자동완성을 위한 설정
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsserver.pluginPaths": ["typescript-plugin-css-modules"]
+}

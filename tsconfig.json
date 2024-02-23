@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "jsx": "preserve",
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "rootDir": "./",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "~/*": ["src/*"],
+    },
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  }
+}

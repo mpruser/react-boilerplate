@@ -1,0 +1,157 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "processors": [
+    "stylelint-processor-styled-components"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "customSyntax": "postcss-styled-syntax"
+    }
+  ],
+  "ignoreFiles": [
+    "./node_modules/**/*.css",
+    "./dist/**/*.css"
+  ],
+  "rules": {
+    "selector-class-pattern": null,
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "order/properties-order": [
+      [
+        {
+          "groupName": "Layout",
+          "properties": [
+            "display",
+            "visibility",
+            "overflow",
+            "float",
+            "clear",
+            "position",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "z-index",
+            "grid",
+            "grid-template",
+            "grid-template-areas",
+            "grid-template-columns",
+            "grid-template-rows",
+            "grid-auto-flow",
+            "grid-auto-columns",
+            "grid-auto-rows",
+            "gap",
+            "column-gap",
+            "row-gap",
+            "flex",
+            "flex-basis",
+            "flex-direction",
+            "flex-flow",
+            "flex-grow",
+            "flex-shrink",
+            "flex-wrap",
+            "place-content",
+            "justify-content",
+            "align-content",
+            "place-items",
+            "justify-items",
+            "align-items",
+            "align-self",
+            "order"
+          ]
+        },
+        {
+          "groupName": "Box",
+          "properties": [
+            "box-sizing",
+            "width",
+            "height",
+            "margin",
+            "margin-top",
+            "margin-right",
+            "margin-bottom",
+            "margin-left",
+            "padding",
+            "padding-top",
+            "padding-right",
+            "padding-bottom",
+            "padding-left",
+            "border",
+            "border-radius",
+            "border-width",
+            "border-style",
+            "border-color",
+            "border-top",
+            "border-right",
+            "border-bottom",
+            "border-left",
+            "border-top-left-radius",
+            "border-top-right-radius",
+            "border-bottom-left-radius",
+            "border-bottom-right-radius",
+            "border-image",
+            "border-collapse",
+            "border-spacing"
+          ]
+        },
+        {
+          "groupName": "Background",
+          "properties": [
+            "background",
+            "background-color",
+            "background-attachment",
+            "background-clip",
+            "background-image",
+            "background-origin",
+            "background-position",
+            "background-repeat",
+            "background-size"
+          ]
+        },
+        {
+          "groupName": "Font",
+          "properties": [
+            "color",
+            "font-style",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "text-align",
+            "text-indent",
+            "vertical-align",
+            "white-space"
+          ]
+        },
+        {
+          "groupName": "Animation",
+          "properties": [
+            "animation",
+            "animation-delay",
+            "animation-direction",
+            "animation-duration",
+            "animation-iteration-count",
+            "animation-name",
+            "animation-play-state",
+            "animation-timing-function",
+            "animation-fill-mode"
+          ]
+        }
+      ],
+      {
+        "unspecified": "bottom"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# yarn v1
+npx --no-install commitlint --edit ""
+
+# yarn berry
+# yarn run commitlint --edit "$1" 
