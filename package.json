@@ -1,5 +1,5 @@
 {
-  "name": "pui-prototype",
+  "name": "react-boilerplate",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -16,6 +16,9 @@
     "lint": "eslint --ext .tsx,.ts,.js --quiet src/",
     "lint:fix": "eslint --fix --ext .tsx,.ts,.js src/",
     "postinstall": "npx husky install"
+  },
+  "bin": {
+    "mpruser-create-react": "./generate-app.js"
   },
   "browserslist": {
     "production": [
